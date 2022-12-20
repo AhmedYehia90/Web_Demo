@@ -8,11 +8,11 @@
   <title>Ahmed Yehia</title>
   <link rel="icon" type="image/fav-icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/normalize.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
     window.addEventListener("scroll", function () {
       const header = document.querySelector('header')
@@ -24,8 +24,8 @@
 <body>
   <header>
     <img src="img/background.jpg" class="banner">
-    <a href="#"><img src="img/logo-1.png" class="logo"></a>
-    <div class="container text-center">
+    <img src="img/logo-1.png" class="logo">
+    <div class="text-center">
       <div class="user-box">
         <h1>Ahmed Yehia</h1>
         <p>Freelance Front End Developer</p>
@@ -59,10 +59,10 @@
   </header>
   <!------------------About---------------->
   <section class="about" id="about">
-    <div class="section-title">
-      <h1>ABOUT</h1>
-    </div> 
     <div class="container">
+      <div class="section-title">
+        <h1>ABOUT</h1>
+      </div>
       <div class="row">
         <div class="experience tab-content">
           <div class="row">
@@ -111,22 +111,133 @@
   </section>
   <!---------------SERVICES----------------->
   <section id="services">
-    <div class="section-title">
-      <h1>SERVICES</h1>
+    <div class="container">
+      <div class="section-title">
+        <h1>SERVICES</h1>
+      </div>
+      <div class="card">
+        <div class="content">
+          <i class="fa-brands fa-connectdevelop svg"></i>
+          <h3>تطوير</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <a href="#">شاهد المزيد</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <i class="fa-solid fa-code svg"></i>
+          <h3>برمجة</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <a href="#">شاهد المزيد</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <i class="fa-solid fa-paintbrush svg"></i>
+          <h3>تصميم</h3>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+          <a href="#">شاهد المزيد</a>
+        </div>
+      </div>
     </div>
-
   </section>
   <!--------------Gallery------------------->
   <section id="gallery">
-    <div class="section-title">
-      <h1>Gallery</h1>
+    <div class="container">
+      <div class="section-title">
+        <h1>Gallery</h1>
+      </div>
+      <div class="soon-box">
+        <span style="--i:0"><i></i></span>
+        <span style="--i:1"><i></i></span>
+        <span style="--i:2"><i></i></span>
+        <span style="--i:3"><i></i></span>
+        <span style="--i:4"><i></i></span>
+        <span style="--i:5"><i></i></span>
+        <span style="--i:6"><i></i></span>
+        <span style="--i:7"><i></i></span>
+        <span style="--i:8"><i></i></span>
+        <span style="--i:9"><i></i></span>
+        <span style="--i:10"><i></i></span>
+        <span style="--i:11"><i></i></span>
+        <span style="--i:12"><i></i></span>
+        <span style="--i:13"><i></i></span>
+        <span style="--i:14"><i></i></span>
+        <span style="--i:15"><i></i></span>
+      </div>
+      <div class="text">
+        <h1>SOON</h1>
+      </div>
     </div>
   </section>
   <!---------Contant-Me---------->
   <section id="contant">
-    <div class="section-title">
-      <h1>Contant Me</h1>
+    <div class="container">
+      <div class="section-title">
+        <h1>Contant Me</h1>
+      </div>
+      <div class="form">
+        <!-- <h2 class="title">تواصل معنــــــــا</h2> -->
+        <div class="row100">
+          <div class="clo">
+            <div class="inputbox">
+              <input type="text" name="" required="required">
+              <span class="text">الاســــــــــــــم</span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row100">
+          <div class="clo">
+            <div class="inputbox">
+              <input type="text" name="" required="required">
+              <span class="text">البريد الالكتروني</span>
+              <span class="line"></span>
+            </div>
+          </div>
+          <div class="clo">
+            <div class="inputbox">
+              <input type="text" name="" required="required">
+              <span class="text">رقم الهــــــاتف</span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row100">
+          <div class="clo">
+            <div class="inputbox textarea">
+              <textarea required="required"></textarea>
+              <span class="text">اكتب رسالتك هنــــــا</span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row100">
+          <div class="clo">
+            <input type="submit" value="ارسال">
+          </div>
+          <!-- <div class="clo"> -->
+          <ul>
+            <li style="--clr:#1da1f2"><i class="fa-brands fa-twitter"></i></li>
+            <li style="--clr:#4267B2"><i class="fa-brands fa-facebook-square"></i></li>
+            <li style="--clr:#25d366"><i class="fa-brands fa-whatsapp"></i></li>
+            <li style="--clr:#ff0000"><i class="fa-brands fa-youtube"></i></li>
+            <li style="--clr:#dd2a7b"><i class="fa-brands fa-instagram-square"></i></li>
+            <li style="--clr:#0072b1"><i class="fa-brands fa-linkedin-in"></i></li>
+          </ul>
+          <!-- </div> -->
+        </div>
+      </div>
     </div>
   </section>
+  <footer>&copy; Copyright 2022 Ahmed Yehia</footer>
+  <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+  <script>VanillaTilt.init(document.querySelectorAll(".card"), {
+      max: 25,
+      speed: 100,
+      glare: true,
+      scale: 1,
+    });</script>
+</body>
 
 </html>
