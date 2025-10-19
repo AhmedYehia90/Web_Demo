@@ -717,8 +717,8 @@ nav ul li a:hover {
 }
 
 
-/*---------Contant-me----------*/
-#contant {
+/*---------Contact-me----------*/
+#contact {
   position: relative;
   display: flexbox;
   top: 0;
@@ -973,4 +973,5 @@ footer {
   text-align: center;
   background: #555555;
   color: #ddd;
+
 }
