@@ -27,7 +27,7 @@ particlesJS("particles-js",
                 }
             },
             "opacity":{
-                "value":500,
+                "value":1,
                 "random":true,
                 "anim":{
                     "enable":true,
@@ -106,3 +106,4 @@ particlesJS("particles-js",
                                 "retina_detect":true
                             }
                             );
+
