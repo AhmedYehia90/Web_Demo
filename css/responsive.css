@@ -443,10 +443,34 @@
    ========================================== */
 @media (min-width: 1400px) {
   
+  /* Increase container width for large screens */
+  .container {
+    width: 1320px !important;
+    max-width: 1320px !important;
+  }
+  
   /* Services Cards - Larger on big screens */
   #services .container .card {
-    width: 320px !important;
-    margin: 25px !important;
+    width: 350px !important;
+    margin: 30px !important;
+  }
+}
+
+/* ==========================================
+   Ultra Large Screens (>= 1600px)
+   ========================================== */
+@media (min-width: 1600px) {
+  
+  /* Further increase container width */
+  .container {
+    width: 1500px !important;
+    max-width: 1500px !important;
+  }
+  
+  /* Services Cards - Even larger */
+  #services .container .card {
+    width: 400px !important;
+    margin: 40px !important;
   }
 }
 
