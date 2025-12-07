@@ -423,10 +423,26 @@
    ========================================== */
 @media (min-width: 1200px) {
   
-  /* Keep current styles */
-  /* Cards already set to 240px width */
+  /* Services Cards - Fix alignment */
+  #services .container {
+    justify-content: center;
+    gap: 40px;
+  }
+  
   .container .card {
-    width: 240px;
+    width: 280px;
+    margin: 20px 0;
+  }
+}
+
+/* ==========================================
+   Extra Large Screens (>= 1400px)
+   ========================================== */
+@media (min-width: 1400px) {
+  
+  /* Services Cards - Larger on big screens */
+  .container .card {
+    width: 320px;
   }
 }
 
