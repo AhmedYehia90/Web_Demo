@@ -425,13 +425,16 @@
   
   /* Services Cards - Fix alignment */
   #services .container {
-    justify-content: center;
-    gap: 40px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
   }
   
-  .container .card {
-    width: 280px;
-    margin: 20px 0;
+  #services .container .card {
+    width: 280px !important;
+    margin: 20px !important;
+    flex-shrink: 0;
   }
 }
 
@@ -441,8 +444,9 @@
 @media (min-width: 1400px) {
   
   /* Services Cards - Larger on big screens */
-  .container .card {
-    width: 320px;
+  #services .container .card {
+    width: 320px !important;
+    margin: 25px !important;
   }
 }
 
