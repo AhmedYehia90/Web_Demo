@@ -1,0 +1,551 @@
+/* ========================================
+   Responsive CSS Fixes for All Screen Sizes
+   ======================================== */
+
+/* ==========================================
+   Mobile Small (< 576px)
+   ========================================== */
+@media (max-width: 575px) {
+  
+  /* Header Fixes */
+  header {
+    padding: 0 20px;
+    height: 100vh;
+  }
+  
+  header .logo {
+    width: 200px;
+    height: 140px;
+    top: 40%;
+  }
+  
+  header.sticky .logo {
+    width: 40px;
+    height: 35px;
+    left: 30px;
+  }
+  
+  /* User Box */
+  .user-box h1 {
+    font-size: 1.5rem;
+    padding: 0 20px;
+  }
+  
+  .user-box p {
+    font-size: 0.9rem;
+    padding: 0 20px;
+  }
+  
+  /* Navigation */
+  nav {
+    right: 20px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 250px;
+    height: calc(100vh - 60px);
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 999;
+  }
+  
+  nav ul.active {
+    right: 0;
+  }
+  
+  nav ul li {
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+  }
+  
+  nav ul li a {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* About Section */
+  .about {
+    margin-top: 60px;
+    padding: 40px 0;
+  }
+  
+  .about .container {
+    padding: 0 15px;
+  }
+  
+  .section-title {
+    margin-top: 30px;
+  }
+  
+  .section-title h1 {
+    font-size: 1.8rem;
+  }
+  
+  /* Timeline - Single Column */
+  .about .timeline:before {
+    left: 20px;
+  }
+  
+  .about .timeline .timeline-item:nth-child(odd),
+  .about .timeline .timeline-item:nth-child(even) {
+    padding-left: 60px;
+    padding-right: 15px;
+    text-align: left;
+  }
+  
+  .about .timeline .timeline-item:nth-child(odd) .icon,
+  .about .timeline .timeline-item:nth-child(even) .icon {
+    left: 0;
+    right: auto;
+  }
+  
+  .about .timeline .timeline-item-inner {
+    padding: 20px;
+  }
+  
+  .about .timeline .timeline-item-inner h3 {
+    font-size: 1.1rem;
+  }
+  
+  .about .timeline .timeline-item-inner p {
+    font-size: 0.9rem;
+  }
+  
+  /* Services Section */
+  #services {
+    padding: 40px 0;
+  }
+  
+  #services h1 {
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 0 20px;
+  }
+  
+  .container .card {
+    width: 100%;
+    max-width: 300px;
+    height: 350px;
+    margin: 15px auto;
+  }
+  
+  .container .card .content {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .container .card .content h3 {
+    font-size: 2.5em;
+  }
+  
+  .container .card .content p {
+    font-size: 1em;
+  }
+  
+  .container .card .content a {
+    font-size: 1.2em;
+    padding: 6px 15px;
+  }
+  
+  /* Gallery Section */
+  #gallery {
+    padding: 40px 0;
+  }
+  
+  #gallery h1 {
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 0 20px;
+  }
+  
+  .soon-box {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .soon-box span {
+    height: 150px;
+    border-bottom: 80px solid #1a1a1a;
+  }
+  
+  .text {
+    width: 100%;
+    bottom: 120px;
+    padding: 0 20px;
+  }
+  
+  .text h1 {
+    font-size: 2rem;
+  }
+  
+  /* Contact Section */
+  #contact {
+    padding: 40px 0;
+  }
+  
+  #contact h1 {
+    width: 100%;
+    font-size: 1.8rem;
+    padding: 0 20px;
+  }
+  
+  #contact .container {
+    padding: 15px;
+    margin: 0 15px;
+  }
+  
+  #contact .container h2 {
+    font-size: 1.5rem;
+  }
+  
+  #contact .container .row100 {
+    grid-template-columns: 1fr;
+  }
+  
+  #contact .container .row100 .inputbox .text {
+    font-size: 1.2rem;
+  }
+  
+  #contact ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  #contact ul li {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #contact ul li .fa-brands {
+    font-size: 1.5em;
+  }
+}
+
+/* ==========================================
+   Mobile Large (576px - 767px)
+   ========================================== */
+@media (min-width: 576px) and (max-width: 767px) {
+  
+  /* Header */
+  header {
+    padding: 0 30px;
+  }
+  
+  header .logo {
+    width: 250px;
+    height: 175px;
+  }
+  
+  header.sticky .logo {
+    width: 45px;
+    height: 40px;
+    left: 40px;
+  }
+  
+  /* User Box */
+  .user-box h1 {
+    font-size: 1.8rem;
+  }
+  
+  .user-box p {
+    font-size: 1rem;
+  }
+  
+  /* Navigation */
+  nav {
+    right: 30px;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 280px;
+    height: calc(100vh - 60px);
+    background: rgba(0, 0, 0, 0.95);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 999;
+  }
+  
+  nav ul.active {
+    right: 0;
+  }
+  
+  nav ul li {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  /* Section Titles */
+  .section-title h1 {
+    font-size: 2rem;
+  }
+  
+  /* Timeline - Single Column */
+  .about .timeline:before {
+    left: 25px;
+  }
+  
+  .about .timeline .timeline-item:nth-child(odd),
+  .about .timeline .timeline-item:nth-child(even) {
+    padding-left: 70px;
+    padding-right: 15px;
+    text-align: left;
+  }
+  
+  .about .timeline .timeline-item:nth-child(odd) .icon,
+  .about .timeline .timeline-item:nth-child(even) .icon {
+    left: 5px;
+    right: auto;
+  }
+  
+  /* Services Cards */
+  .container .card {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto;
+  }
+  
+  /* Gallery */
+  .soon-box {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .soon-box span {
+    height: 180px;
+    border-bottom: 90px solid #1a1a1a;
+  }
+  
+  /* Contact */
+  #contact .container .row100 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==========================================
+   Tablet (768px - 991px)
+   ========================================== */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+  /* Header */
+  header {
+    padding: 0 50px;
+  }
+  
+  header .logo {
+    width: 350px;
+    height: 245px;
+  }
+  
+  header.sticky .logo {
+    width: 50px;
+    height: 45px;
+    left: 60px;
+  }
+  
+  /* Navigation */
+  nav {
+    right: 50px;
+  }
+  
+  nav ul li a {
+    padding: 10px 12px;
+    font-size: 0.95em;
+  }
+  
+  /* Section Titles */
+  .section-title h1 {
+    font-size: 2.2rem;
+  }
+  
+  /* Services Cards - 2 per row */
+  .container .card {
+    width: calc(50% - 40px);
+    max-width: 280px;
+  }
+  
+  /* Gallery */
+  .soon-box {
+    width: 350px;
+    height: 350px;
+  }
+  
+  /* Contact */
+  #contact .container .row100 {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* ==========================================
+   Desktop Small (992px - 1199px)
+   ========================================== */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+  /* Header */
+  header {
+    padding: 0 70px;
+  }
+  
+  header .logo {
+    width: 400px;
+    height: 280px;
+  }
+  
+  /* Navigation */
+  nav {
+    right: 70px;
+  }
+  
+  nav ul li a {
+    padding: 12px 14px;
+  }
+  
+  /* Services Cards - 3 per row */
+  .container .card {
+    width: calc(33.333% - 40px);
+    max-width: 240px;
+  }
+}
+
+/* ==========================================
+   Desktop Large (>= 1200px)
+   ========================================== */
+@media (min-width: 1200px) {
+  
+  /* Keep current styles */
+  /* Cards already set to 240px width */
+  .container .card {
+    width: 240px;
+  }
+}
+
+/* ==========================================
+   Hamburger Menu (Mobile Only)
+   ========================================== */
+@media (max-width: 767px) {
+  
+  /* Hamburger Button */
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  header.sticky .hamburger {
+    top: 15px;
+  }
+  
+  .hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+  }
+  
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+  
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(8px, -8px);
+  }
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+/* ==========================================
+   Additional Responsive Fixes
+   ========================================== */
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Flexible images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container responsive */
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Fix for particles on mobile */
+@media (max-width: 767px) {
+  #particles-js {
+    display: block;
+  }
+  
+  header.sticky #particles-js {
+    transform: translate(0, -50%);
+  }
+}
+
+/* Touch-friendly buttons */
+@media (max-width: 767px) {
+  nav ul li a,
+  .container .card .content a,
+  #contact input[type='submit'] {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Improve readability on small screens */
+@media (max-width: 575px) {
+  body {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+  }
+  
+  p {
+    line-height: 1.6;
+  }
+}
